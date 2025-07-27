@@ -1,6 +1,7 @@
 package com.sandeepprabhakula.kafkaproducer.config;
 
 import com.sandeepprabhakula.kafkaproducer.model.BusPayload;
+import org.apache.kafka.clients.admin.Config;
 import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;
@@ -22,7 +23,7 @@ public class KafkaConfig {
 
         return TopicBuilder
                 .name(AppConstants.LOCATION_UPDATE_TOPIC)
-//                .partitions(5)
+//                .partitions(6)
 //                .replicas(2)
                 .build();
     }

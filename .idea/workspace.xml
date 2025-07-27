@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a1d9f8f-25fa-4f8a-b8c3-8ed68f88d9a3" name="Changes" comment="added root Dockerfile">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-consumer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-producer/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-producer/Dockerfile" afterDir="false" />
+    <list default="true" id="4a1d9f8f-25fa-4f8a-b8c3-8ed68f88d9a3" name="Changes" comment="removed parent docker file">
+      <change beforePath="$PROJECT_DIR$/.idea/Kafka_tutorials.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +46,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -62,7 +71,8 @@
       <workItem from="1699851703881" duration="25000" />
       <workItem from="1716826058998" duration="607000" />
       <workItem from="1719740401380" duration="12000" />
-      <workItem from="1719740715184" duration="882000" />
+      <workItem from="1719740715184" duration="1077000" />
+      <workItem from="1719741830114" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="added root Dockerfile">
       <option name="closed" value="true" />
@@ -80,7 +90,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719741035780</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="removed parent docker file">
+      <option name="closed" value="true" />
+      <created>1719741634697</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719741634698</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added root Dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="added root Dockerfile" />
+    <MESSAGE value="removed parent docker file" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed parent docker file" />
   </component>
 </project>

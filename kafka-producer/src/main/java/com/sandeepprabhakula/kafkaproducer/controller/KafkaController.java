@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+import java.util.concurrent.ExecutionException;
 
 @RestController
 @CrossOrigin("*")
@@ -17,7 +18,7 @@ public class KafkaController {
     private KafkaService kafkaService;
 
     @PostMapping("/update")
-    public ResponseEntity<?> updateLocation(@RequestBody BusPayload busPayload) {
+    public ResponseEntity<?> updateLocation(@RequestBody BusPayload busPayload) throws ExecutionException, InterruptedException {
         kafkaService.update(busPayload);
 
         return new ResponseEntity<>(Map.of("message", "location Updated"), HttpStatus.OK);

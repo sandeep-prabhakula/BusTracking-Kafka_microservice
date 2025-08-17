@@ -3,6 +3,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.1-jdk-slim
-COPY --from=build /target/kafka-consumer-0.0.1-SNAPSHOT.jar kafka-consumer.jar
+COPY --from=build /target/consumer-app.jar consumer-app.jar
 EXPOSE 8081
-ENTRYPOINT ["java","-jar","kafka-consumer.jar"]
+ENTRYPOINT ["java","-jar","consumer-app.jar"]

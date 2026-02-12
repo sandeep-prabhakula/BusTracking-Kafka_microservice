@@ -20,5 +20,11 @@ public class BusPayload {
         this.busNumber = busNumber;
     }
 
-
+    @Override
+    public String toString() {
+        return "BusPayload{" +
+                "busNumber='" + busNumber + '\'' +
+                ", coordinates=" + coordinates +
+                '}';
+    }
 }

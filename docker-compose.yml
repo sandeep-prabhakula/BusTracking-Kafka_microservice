@@ -1,28 +1,28 @@
 services:
-  zookeeper:
-    image: zookeeper:latest
-    ports:
-      - "2181:2181"
-    networks:
-      - my-network
+#  zookeeper:
+#    image: zookeeper:latest
+#    ports:
+#      - "2181:2181"
+#    networks:
+#      - my-network
 
   kafka:
-    image: bitnami/kafka:3.9.0  # Supports ZooKeeper mode
+    image: apache/kafka:latest  # Supports ZooKeeper mode
     ports:
       - "9092:9092"
     environment:
       KAFKA_ENABLE_KRAFT: "no"
-      KAFKA_CFG_ZOOKEEPER_CONNECT: zookeeper:2181
+#      KAFKA_CFG_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_CFG_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092
       KAFKA_CFG_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT
       KAFKA_CFG_INTER_BROKER_LISTENER_NAME: PLAINTEXT
-    depends_on:
-      - zookeeper
+#    depends_on:
+#      - zookeeper
     networks:
       - my-network
 
   producer:
-    build: ./kafka-producer
+    build: ./producer
     ports:
       - "8080:8080"
     depends_on:
@@ -33,7 +33,7 @@ services:
       - my-network
 
   consumer:
-    build: ./kafka-consumer
+    build: ./consumer
     ports:
       - "8081:8081"
     depends_on:
